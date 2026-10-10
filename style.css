@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root{
+  --navy:#4f2d23;
+  --teal:#6f7f4f;
+  --accent:#c46f3d;
+  --accent-soft:#ddb182;
+  --ink:#2f231d;
+  --muted:#6f6259;
+  --soft:#f4ece3;
+  --panel:#fbf7f1;
+  --stone:#d8c5b2;
+  --paper:#fffdf9;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 Inter,Arial,sans-serif}
+h1,h2,h3{font-family:'Space Grotesk',Inter,Arial,sans-serif;line-height:1.18;letter-spacing:-.028em}
+h1{font-size:clamp(2.9rem,6vw,5rem);margin:24px 0 28px}
+h2{font-size:clamp(2.2rem,4vw,3.3rem);margin:15px 0 35px}
+h3{font-size:1.34rem;margin:0 0 16px}
+p{margin:0 0 22px}
+.container{width:min(1160px,calc(100% - 60px));margin:auto}
+.site-header{background:rgba(255,251,247,.96);position:sticky;top:0;z-index:10;box-shadow:0 1px 8px #2f231d12;border-bottom:1px solid #efe3d8}
+.header-inner{display:flex;justify-content:space-between;align-items:center;min-height:90px;gap:20px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:700 clamp(1.2rem,2.4vw,2rem) 'Space Grotesk',sans-serif;color:#8c4e30;letter-spacing:-.04em;white-space:nowrap}
+.brand em{font-style:normal;color:#8f7a6d}
+.logo-icon{width:58px;height:52px;flex-shrink:0}
+nav{display:flex;gap:33px;align-items:center}
+nav a{color:var(--ink);font-weight:600;text-decoration:none}
+nav a.active,nav a:hover{color:var(--accent)}
+.menu-toggle{display:none}
+.hero,.page-hero,.cta,.dark-band{
+  background:
+    linear-gradient(135deg, rgba(79,45,35,.98) 0%, rgba(121,67,47,.96) 58%, rgba(161,91,52,.92) 100%);
+  color:#fff;
+}
+.hero{padding:120px 0 130px}
+.hero p,.page-hero p,.cta p{color:#f0ddd0;max-width:670px;font-size:1.24rem}
+.hero h1{max-width:900px}
+.page-hero{padding:95px 0 110px}
+.page-hero h1{max-width:980px}
+.eyebrow{font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);font-size:.9rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:18px;margin-top:45px}
+.button{border-radius:5px;padding:14px 27px;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;font-weight:700;min-height:54px;transition:filter .2s, transform .2s, box-shadow .2s}
+.button:hover{filter:brightness(1.05);transform:translateY(-1px);box-shadow:0 10px 24px #2f231d1a}
+.button-primary{background:var(--accent);color:#fff}
+.button-outline{border:1px solid #f1d1b2;color:#fff;background:transparent}
+.button-wide{width:100%}
+.section{padding:105px 0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:60px 0 38px}
+.service-card{border:1px solid #e6d8cb;border-left:5px solid var(--accent);padding:43px 38px;border-radius:5px;background:white;box-shadow:0 10px 26px #56352508}
+.service-card p{color:#6c625b;margin:0}
+.text-link{font-weight:700;color:var(--accent);text-decoration:none}
+.text-link:hover{text-decoration:underline}
+.dark-band{padding:90px 0}
+.pillars h2{max-width:900px;margin:18px 0 52px}
+.pillars h2:after{content:'';display:block;background:var(--teal);height:3px;width:70px;margin-top:25px}
+.pillars h2:last-child{margin-bottom:0}
+.centered{text-align:center}
+.narrow{max-width:850px}
+.narrow p{font-size:1.22rem;margin-bottom:42px}
+.cta{padding:105px 0;text-align:center;border-bottom:5px solid var(--teal)}
+.cta p{margin:0 auto 38px}
+.soft-section{background:var(--soft);padding:100px 0}
+.section-intro{max-width:900px;font-size:1.12rem}
+.prose{max-width:900px}
+.prose p{font-size:1.13rem;line-height:1.95}
+.three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:58px}
+.three-grid article{border-top:2px solid var(--accent);padding-top:20px}
+.three-grid p{color:#6b615a}
+.num{font:700 3rem 'Space Grotesk',sans-serif;color:#bf8b63;display:block;margin:0 0 28px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.contact-panel{background:var(--panel);padding:40px;border-radius:9px;border:1px solid #eadfd5}
+.muted{color:#6f675f}
+.small{font-size:.87rem}
+.site-footer{background:#44271f;color:#e8d7ca;padding:75px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:60px}
+.brand-light b{color:#ddb182}
+.brand-light em{color:#eaded5}
+.brand-light .logo-icon path:first-child,.brand-light .logo-icon path:nth-child(3){stroke:#ddb182}
+.brand-light .logo-icon circle{fill:#ddb182}
+.brand-light .logo-icon path:nth-child(2){stroke:#eaded5}
+.site-footer h3{color:var(--teal);font:700 .86rem Inter,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+.site-footer a:not(.brand):not(.button){display:block;color:#e8d7ca;text-decoration:none;margin-bottom:5px}
+.site-footer a:hover{text-decoration:underline}
+.site-footer .button{width:100%;margin-top:22px}
+.footer-bottom{border-top:1px solid #755243;margin-top:60px;padding-top:25px;font-size:.83rem}
+.skip-link{position:absolute;top:-100px;left:5px;background:white;padding:10px;z-index:100}
+.skip-link:focus{top:5px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+@media(max-width:760px){
+  .container{width:calc(100% - 42px)}
+  .header-inner{min-height:76px}
+  .brand{font-size:1.45rem}
+  .logo-icon{width:48px;height:43px}
+  .menu-toggle{display:grid;gap:5px;border:0;background:transparent;padding:13px;cursor:pointer}
+  .menu-toggle span{width:24px;height:2.5px;background:#412922}
+  nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fffaf5;box-shadow:0 5px 10px #0002;padding:20px;flex-direction:column;align-items:stretch;gap:5px}
+  nav.open{display:flex}
+  nav a{padding:10px 15px}
+  .hero{padding:75px 0 85px}
+  .page-hero{padding:62px 0 74px}
+  h1{font-size:clamp(2.65rem,9vw,4rem)}
+  .hero p,.page-hero p{font-size:1.11rem}
+  .section,.soft-section{padding:65px 0}
+  .cards,.three-grid,.contact-grid,.footer-grid{grid-template-columns:1fr;gap:20px}
+  .service-card{padding:27px 24px}
+  .dark-band,.cta{padding:75px 0}
+  .pillars h2{margin-bottom:42px}
+  .footer-grid{gap:37px}
+  .site-footer{padding-top:60px}
+  .contact-panel{padding:26px}
+  .narrow p{font-size:1.08rem}
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
